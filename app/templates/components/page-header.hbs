@@ -1,0 +1,15 @@
+<header>
+  {{yield}}
+  <button {{action 'toggleShowModal'}}>new bar</button>
+  {{#if showModal}}
+  {{#modal-dialog close='toggleShowModal' translucentOverlay=true}}
+    <h1>Create a new progress bar</h1>
+    <button {{action 'toggleShowModal'}}>x</button>
+    <label>
+      Give your progress bar a name
+      {{input type='text' placeholder='Maths and Science' value=progressBarName}}
+    </label>
+    <button {{action 'createProgressBar'}}>Create</button>
+  {{/modal-dialog}}
+  {{/if}}
+</header>

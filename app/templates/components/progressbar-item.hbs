@@ -1,0 +1,6 @@
+<div>
+  <h3>{{data.title}} ({{data.value}}%)</h3>
+  {{increment-buttons value=data.value}}
+  <button {{action 'delete'}}>delete</button>
+  {{progress-bar value=data.value max=data.max}}
+</div>

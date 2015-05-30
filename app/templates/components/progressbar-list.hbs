@@ -1,0 +1,7 @@
+<h2>{{title}}</h2>
+<section>
+  {{#each data as |progressbar|}}
+  {{progressbar-item data=progressbar}}
+  {{/each}}
+</section>
+{{yield}}
